@@ -1,8 +1,7 @@
 /**
  * @param array – массив элементов. Например, [1, 8, 3]
  * @param number – число, которое нужно прибавить к числу, полученному из массива
-*/
-function addNumber(array, number) {
+*/function addNumber(array, number) {
   let counter = 0;
   for (let i = 0; i < array.length; i++) {
       if (typeof(array[i]) != typeof (+array[i]))
@@ -18,6 +17,10 @@ function addNumber(array, number) {
   return(mas);
   }
   else return(null);
+}
+
+module.exports = {
+    addNumber
 }
 
 //списано//
